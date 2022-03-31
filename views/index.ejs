@@ -1,152 +1,333 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Craigslist</title>
+    <title> Andy Warhol </title>
 
     <%- include layouts/css_header.ejs -%>
 
 </head>
+
 <body>
 
 
 
-<!-- ============================== Top Navbar for every page ============================= -->
-<%- include('layouts/header.ejs', {isHomePage: true}) -%>
+    <!-- ============================== Top Navbar for every page ============================= -->
+    <%- include('layouts/header.ejs', {isHomePage: true}) -%>
 
 
 
-<!-- ============================== Second navbar for language drop-down menu          and            Location drop-down menu ============================= -->
-    <nav class="navbar navbar-expand-lg navbar-light second-navbar-panel">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        English
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">English</a>
-                        <a class="dropdown-item" href="#">Français</a>
-                        <a class="dropdown-item" href="#">Dansk</a>
-                        <a class="dropdown-item" href="#">Deutsch</a>
-                        <a class="dropdown-item" href="#">Español</a>
-                        <a class="dropdown-item" href="#">Italiano</a>
-                        <a class="dropdown-item" href="#">Português</a>
-                        <a class="dropdown-item" href="#">Suomi</a>
-                        <a class="dropdown-item" href="#">Svenska</a>
-                        <a class="dropdown-item" href="#">Türkçe</a>
-                        <a class="dropdown-item" href="#">普通话</a>
-                        <a class="dropdown-item" href="#">日本語</a>
-                        <a class="dropdown-item" href="#">한국어</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        US, California
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Change my city</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Change my Region</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+   
 
 
 
 
-<!-- ============================== Body AND Footer ============================= -->
-<div class="container-fluid">
-    <div class="row d-flex justify-content-center main-slider-container">
-        <div class="col-md-5">
-            <img src="img/logo/craigslist-logo-transparent.png" class="img-center" style="width: 90%;" alt="">
-            <form class="navbar-form navbar-left">
-                <div class="input-group mb-3">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i class="bi bi-search"></i></button>
-                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+
+        <!-- ============================== Body AND Footer ============================= -->
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center main-slider-container" >
+                <div class="col-md-4">
+                    <img src="img/logo/Warhol.png" class="img-center" style="width: 100%;" alt="">
                 </div>
-                <a href="" class="btn btn-lg new-add-button">New Ad <i class="bi bi-plus-lg"></i></a>
-                <a href="" class="btn btn-lg btn-secondary explore-button">Explore <i class="bi bi-search"></i></a>
-            </form>
-        </div>
-    </div>
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-3 text-center mt-5 mb-5">
-            <h1 class="display-3">Categories</h1>
-        </div>
-    </div>
-    <div class="row d-flex justify-content-center mb-5">
-        <div class="col-md-4">
-            <a href="#">
-                <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="#">
-                <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="#">
-                <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
-            </a>
-        </div>
-    </div>
-    <div class="row d-flex justify-content-center mb-5">
-        <div class="col-md-4">
-            <a href="#">
-                <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="#">
-                <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="#">
-                <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
-            </a>
-        </div>
-    </div>
-    <div class="row d-flex justify-content-center mb-5">
-        <div class="col-md-4">
-            <a href="#">
-                <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="#">
-                <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="#">
-                <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
-            </a>
-        </div>
-    </div>
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-12 text-center mt-5 mb-5">
-            <h2 class="display-6">Not seeing what you are looking for? <a href="#">Search it up!</a></h2>
-        </div>
-    </div>
+                <div class="col-md-7">
+                    <img src="img/logo/andy-warhol-marilyn.png" class="img-center" style="width: 100%;" alt="">
+                </div>
+            </div>
+            
+
+
+
+            
+
+            <div class="row d-flex justify-content-center">
+           
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+
+                        </div>
+                        <div class="col-4">
+                            <br> <br> <h1 class="display-3">Childhood</h1>
+                            Andy was the third child born to Czechoslovakian immigrant parents, Ondrej and Ulja (Julia)
+                            Warhola, in a working class neighborhood of Pittsburgh. He had two older brothers, John and
+                            Paul. As a child, Andy was smart and creative. His mother, a casual artist herself,
+                            encouraged his artistic urges by giving him his first camera at nine years old. Warhol was
+                            known to suffer from a nervous disorder that would frequently keep him at home, and, during
+                            these long periods, he would listen to the radio and collect pictures of movie stars around
+                            his bed. It was this exposure to current events at a young age that he later said shaped his
+                            obsession with pop culture and celebrities. When he was 14, his father passed away, leaving
+                            the family money to be specifically used towards higher learning for one of the boys. It was
+                            decided by the family that Andy would benefit the most from a college education.
+                        </div>
+                        <div class="col-4">
+                            <br> <br> <h1 class="display-3">Early Training</h1>
+                            After graduating from high school at the age of 16 in 1945, Warhol attended Carnegie
+                            Institute of Technology (now Carnegie Mellon University), where he received formal
+                            training in pictorial design. Shortly after graduating, in 1949, he moved to New York
+                            City, where he worked as a commercial illustrator. His first project was for Glamour
+                            magazine for an article entitled, "Success is a Job in New York." Throughout the 1950s
+                            Warhol continued his successful career in commercial illustration, working for several
+                            well-known magazines, such as Vogue, Harper's Bazaar and The New Yorker. He also
+                            produced advertising and window displays for local New York retailers. His work with I.
+                            Miller & Sons, for which his whimsical blotted line advertisements were particularly
+                            noticed, gained him some local notoriety, even winning several awards from the Art
+                            Director's Club and the American Institute of Graphic Arts.
+                        </div>
+                        <div class="col">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-3 text-center mt-5 mb-5">
+                        <h1 class="display-3">Early Training</h1>
+                    </div>
+
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+
+                            </div>
+                            <div class="col-6">
+                                After graduating from high school at the age of 16 in 1945, Warhol attended Carnegie
+                                Institute of Technology (now Carnegie Mellon University), where he received formal
+                                training in pictorial design. Shortly after graduating, in 1949, he moved to New York
+                                City, where he worked as a commercial illustrator. His first project was for Glamour
+                                magazine for an article entitled, "Success is a Job in New York." Throughout the 1950s
+                                Warhol continued his successful career in commercial illustration, working for several
+                                well-known magazines, such as Vogue, Harper's Bazaar and The New Yorker. He also
+                                produced advertising and window displays for local New York retailers. His work with I.
+                                Miller & Sons, for which his whimsical blotted line advertisements were particularly
+                                noticed, gained him some local notoriety, even winning several awards from the Art
+                                Director's Club and the American Institute of Graphic Arts.
+                                In the early 1950s, Andy shortened his name from Warhola to Warhol, and decided to
+                                strike out on his own as a serious artist. His experience and expertise in commercial
+                                art, combined with his immersion in American popular culture, influenced his most
+                                notable work. In 1952, he exhibited Fifteen Drawings Based on the Writings of Truman
+                                Capote in his first individual show at the Hugo Gallery in New York. While exhibiting
+                                work in several venues around New York City, he most notably exhibited at the Museum of
+                                Modern Art, where he participated in his first group show in 1956. Warhol took notice of
+                                new emerging artists, greatly admiring the work of Robert Rauschenberg and Jasper Johns,
+                                which inspired him to expand his own artistic experimentation.
+                                In 1960, Warhol began using advertisements and comic strips in his paintings. These
+                                works, examples of early Pop art, were characterized by more expressive and painterly
+                                styles that included clearly recognizable brushstrokes, and were loosely influenced by
+                                Abstract Expressionism. However, subsequent works, such his Brillo Boxes (1964), would
+                                mark a direct rebellion against Abstract Expressionism, by almost completely removing
+                                any evidence of the artist's hand.
+
+                            </div>
+                            <div class="col">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-3 text-center mt-5 mb-5">
+                            <h1 class="display-3">Mature Period</h1>
+                        </div>
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+
+                                </div>
+                                <div class="col-6">
+                                    In September 1960, after moving to a townhouse at 1342 Lexington Avenue, on the
+                                    Upper East Side of Manhattan, he began his most prolific period. From having no
+                                    dedicated studio space in his previous apartment, where he lived with his mother, he
+                                    now had plenty of room to work. In 1962 he offered the Department of Real Estate
+                                    $150 a month to rent a nearby obsolete fire house on East 87th Street. He was
+                                    granted permission and used this space in conjunction with his Lexington Avenue
+                                    space until 1964.
+                                    Continuing with the theme of advertisements and comic strips, his paintings
+                                    throughout the early part of the 1960s were based primarily on illustrated images
+                                    from printed media and graphic design. To create his large-scale graphic canvases,
+                                    Warhol used an opaque projector to enlarge the images onto a large canvas on the
+                                    wall. Then, working freehand, he would trace the image with paint directly onto the
+                                    canvas without a pencil tracing underneath. As a result, Warhol's works from early
+                                    1961 are generally more painterly.
+                                    Late in 1961, Warhol started on his Campbell's Soup Can paintings. The series
+                                    employed many different techniques, but most were created by projecting source
+                                    images on to canvas, tracing them with a pencil, and then applying paint. In this
+                                    way Warhol removed most signs of the artist's hand.
+                                    In 1962 Warhol started to explore silkscreening. This stencil process involved
+                                    transferring an image on to a porous screen, then applying paint or ink with a
+                                    rubber squeegee. This marked another means of painting while removing traces of his
+                                    hand; like the stencil processes he had used to create the Campbell's Soup Can
+                                    pictures, this also enabled him to repeat the motif multiple times across the same
+                                    image, producing a serial image suggestive of mass production. Often, he would first
+                                    set down a layer of colors which would complement the stencilled image after it was
+                                    applied.
+                                    His first silkscreened paintings were based on the front and back faces of dollar
+                                    bills, and he went on to create several series of images of various consumer goods
+                                    and commercial items using this method. He depicted shipping and handling labels,
+                                    Coca-Cola bottles, coffee can labels, Brillo Soap box labels, matchbook covers, and
+                                    cars. From autumn 1962 he also started to produce photo-silkscreen works, which
+                                    involved transferring a photographic image on the porous silkscreens. His first was
+                                    Baseball (1962), and those that followed often employed banal or shocking imagery
+                                    derived from tabloid newspaper photographs of car crashes and civil rights riots,
+                                    money, and consumer household products.
+
+                                    In 1960, Warhol began using advertisements and comic strips in his paintings. These
+                                    works, examples of early Pop art, were characterized by more expressive and
+                                    painterly styles that included clearly recognizable brushstrokes, and were loosely
+                                    influenced by Abstract Expressionism. However, subsequent works, such his Brillo
+                                    Boxes (1964), would mark a direct rebellion against Abstract Expressionism, by
+                                    almost completely removing any evidence of the artist's hand.<br> <br>
+
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
+                                    </a>
+
+                                    <br> In 1964 Warhol moved to 231 East 47th Street, calling it "The Factory." Having
+                                    achieved moderate success as an artist by this point, he was able to employ several
+                                    assistants to help him execute his work. This marked a turning point in his career.
+                                    Now, with the help of his assistants, he could more decisively remove his hand from
+                                    the canvas and create repetitive, mass-produced images that would appear empty of
+                                    meaning and beg the question, "What makes art, art?" This was an idea first
+                                    introduced by Marcel Duchamp, whom Warhol admired.  <br> <br>
+
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
+                                    </a>
+
+                                    <br> Warhol had a lifelong fascination with Hollywood, demonstrated by his series of
+                                    iconic images of celebrities such as Marilyn Monroe and Elizabeth Taylor. He also
+                                    expanded his medium into installations, most notably at the Stable Gallery in New
+                                    York in 1964, replicating Brillo boxes in their actual size and then screenprinting
+                                    their label designs onto blocks made of plywood.
+                                    Wanting to continue his exploration of different mediums, Warhol began experimenting
+                                    with film in 1963. Two years later, after a trip to Paris for an exhibition of his
+                                    work, he announced that he would be retiring from painting to focus exclusively on
+                                    film. Although he never completely followed through with this intention, he did
+                                    produce many films, most starring those whom he called the Warholstars, an eccentric
+                                    and eclectic group of friends who frequented the Factory and were known for their
+                                    unconventional lifestyle. <br> <br>
+
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
+                                    </a>
+
+                                   <br> He created approximately 600 films between 1963 and 1976, ranging in length from a
+                                    few minutes to 24 hours. He also developed a project called The Exploding Plastic
+                                    Inevitable, or EPI, in 1967. The EPI was a multi-media production combining The
+                                    Velvet Underground rock band with projections of film, light and dance, culminating
+                                    in a sensory experience of Performance Art. Warhol had also been self-publishing
+                                    artist's books since the 1950s, but his first mass produced book, Andy Warhol's
+                                    Index, was published in 1967. He later published several other books, and founded
+                                    Interview Magazine with his friend Gerard Malanga in 1969. The magazine is dedicated
+                                    to celebrities and is still in production today. <br> <br>
+
+
+                                    
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
+                                    </a>
+
+                                    <br> After an attempt on his life in 1968, by acquaintance and radical feminist, Valerie
+                                    Solanas, he decided to distance himself from his unconventional entourage. This
+                                    marked the end of the 1960s Factory scene. Warhol subsequently sought out
+                                    companionship in New York high society, and throughout most of the 1970s his work
+                                    consisted of commissioned portraits derived from printed Polaroid photographs. The
+                                    most notable exception to this is his famous Mao series, which was done as a comment
+                                    on President Richard Nixon's visit to China. Lacking the glamour and commercial
+                                    appeal of his earlier portraits, critics saw Warhol as prostituting his artistic
+                                    talent, and viewed this later period as one of decline. However, Warhol saw
+                                    financial success as an important goal. At this point, he had made the successful
+                                    shift from commercial artist to business artist.
 
 
 
 
-    <!-- FOOTER -->
-    <%- include layouts/footer.ejs -%>
-</div>
+                                </div>
+                                <div class="col">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-3 text-center mt-5 mb-5">
+                                <h1 class="display-3">Categories</h1>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center mb-5">
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center mb-5">
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center mb-5">
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/500" class="img-fluid img-center" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-12 text-center mt-5 mb-5">
+                                <h2 class="display-6">Not seeing what you are looking for? <a href="#">Search it up!</a>
+                                </h2>
+                            </div>
+                        </div>
 
 
-<!-- BOOTSTRAP JavaScript CDN-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+                        <!-- FOOTER -->
+                        <%- include layouts/footer.ejs -%>
+                    </div>
+
+
+                    <!-- BOOTSTRAP JavaScript CDN-->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
