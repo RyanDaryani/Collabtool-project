@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Craigslist</title>
+
+    <%- include layouts/css_header.ejs -%>
+
+</head>
+<body>
+
+
+<!-- ============================== Top Navbar for every page ============================= -->
+<%- include('layouts/header.ejs', {isHomePage: false}) -%>
+
+
+<!-- ============================== Second navbar for language drop-down menu          and            Location drop-down menu ============================= -->
+<nav class="navbar navbar-expand-lg navbar-light second-navbar-panel">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    English
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">English</a>
+                    <a class="dropdown-item" href="#">Français</a>
+                    <a class="dropdown-item" href="#">Dansk</a>
+                    <a class="dropdown-item" href="#">Deutsch</a>
+                    <a class="dropdown-item" href="#">Español</a>
+                    <a class="dropdown-item" href="#">Italiano</a>
+                    <a class="dropdown-item" href="#">Português</a>
+                    <a class="dropdown-item" href="#">Suomi</a>
+                    <a class="dropdown-item" href="#">Svenska</a>
+                    <a class="dropdown-item" href="#">Türkçe</a>
+                    <a class="dropdown-item" href="#">普通话</a>
+                    <a class="dropdown-item" href="#">日本語</a>
+                    <a class="dropdown-item" href="#">한국어</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    US, California
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Change my city</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Change my Region</a>
+                </div>
+            </li>
+            <li class="li" style="margin-left: 60px;width: 600px">
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i
+                                class="bi bi-search"></i></button>
+                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+                           aria-describedby="button-addon1">
+                </div>
+            </li>
+            <li class="nav-item" style="margin-left: 20px">
+                <a class="nav-link" href="#" style="border-left:1px solid white">Explore</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- ============================== Body AND Footer ============================= -->
+<div class="container-fluid">
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-11" style="padding: 20px">
+            <div class="row">
+                <div class="col-md-6">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="500"
+                         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                         preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                    </svg>
+                    <div class="row d-flex justify-content-center mt-2">
+                        <div class="col-md-1" style="font-size: 2.4em">
+                            <i class="bi bi-chevron-left"></i>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="https://via.placeholder.com/90x60" class="" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="https://via.placeholder.com/90x60" class="" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="https://via.placeholder.com/90x60" class="" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="https://via.placeholder.com/90x60" class="" alt="">
+                        </div>
+                        <div class="col-md-1" style="font-size: 2.4em">
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row d-flex justify-content-end">
+                        <div class="col-md-3 d-flex justify-content-around" style="font-size: 2em">
+                            <a >
+                                <i class="bi bi-share-fill"></i>
+                            </a>
+                            <a >
+                                <i class="bi bi-three-dots"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-11">
+                            <h2>
+                                Ad title
+                            </h2>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maiores nemo nihil! Laudantium magni necessitatibus placeat quos. Aliquam, autem distinctio et id impedit libero possimus quisquam! Aut modi quaerat unde!
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" style="margin-left: 10px;color: #ADADAD">
+                            <small>Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="row mt-4" style="color: #b3b3b3">
+                        <div class="col">
+                            <h5>Price: $30.99 CAD</h5>
+                            <h5>Condition: New</h5>
+                            <h5>Location: Vancouver, BC</h5>
+                            <h5>Category: Item Category</h5>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-11 mt-5">
+                            <a href="" class="btn btn-secondary btn-lg" style="width: 100%">Message the Seller</a>
+                        </div>
+                        <div class="col-md-1 mt-5">
+                            <i class="bi bi-bookmark-fill" style="font-size: 2em"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <%- include layouts/footer.ejs -%>
+</div>
+
+
+<!-- BOOTSTRAP JavaScript CDN-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

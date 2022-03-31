@@ -1,0 +1,47 @@
+.bg-top-navbar {
+    background-color: #ADADAD;
+}
+
+.top-navbar {
+    padding: 20px;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second-navbar-panel {
+    background: #CCCCCC;
+    padding-left: 50px
+}
+
+.new-add-button {
+    width: 48%;
+    background: #FFA347;
+    color: aliceblue;
+}
+
+.explore-button {
+    width: 50%;
+    background: #b3b3b3;
+}
+
+.main-slider-container {
+    padding-top: 60px;
+    background: #CCCCCC;
+    padding-bottom: 100px;
+}
+
+.footer-header-title {
+    background: #E0E0E0;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.footer-link-box {
+    display: inline-block;
+    padding: 13px 30px;
+    width: 11%;
+}
